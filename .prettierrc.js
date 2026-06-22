@@ -4,8 +4,8 @@ module.exports = {
   trailingComma: 'all',
   arrowParens: 'avoid',
   printWidth: 120,
-  semi: false,
+  semi: true,
   tabWidth: 2,
   trailingComma: 'all',
-  endOfLine: 'lf',
-};
+  endOfLine: 'auto',
+}
