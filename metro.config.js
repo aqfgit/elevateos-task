@@ -14,4 +14,9 @@ module.exports = {
       },
     }),
   },
-}
+  resolver: {
+    // Modern Redux exports CommonJS (.cjs) files
+    // Added 'cjs' here because RN 0.66 Metro does not support it by default
+    sourceExts: ['js', 'jsx', 'ts', 'tsx', 'json', 'cjs'],
+  },
+};
