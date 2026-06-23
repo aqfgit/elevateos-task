@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { PokemonDetailsScreen } from '../features/Pokedex/PokemonDetailsScreen/PokemonDetailsScreen';
-import { PokemonListScreen } from '../features/Pokedex/PokemonListScreen/PokemonListScreen';
-import { ParamList } from './types';
+import { ParamList } from '@/navigation/types';
+import { PokemonListScreen } from '@/features/Pokedex/PokemonListScreen/PokemonListScreen';
+import { PokemonDetailsScreen } from '@/features/Pokedex/PokemonDetailsScreen/PokemonDetailsScreen';
 
 const Stack = createNativeStackNavigator<ParamList>();
 

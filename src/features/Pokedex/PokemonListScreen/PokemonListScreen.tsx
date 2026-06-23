@@ -1,12 +1,11 @@
 import * as React from 'react';
 
-import { useGetPokemonListQuery } from '../../../services/pokemonApi';
-import { ListPokemon } from '../../../services/types';
-
 import { useCallback, useMemo, useState } from 'react';
-import { PokemonListItem } from './components/PokemonListItem';
+import { PokemonListItem } from '@/features/Pokedex/PokemonListScreen/components/PokemonListItem';
 import { ActivityIndicator, FlatList, StyleSheet, Text, View } from 'react-native';
-import { PokemonSearchBar } from './components/PokemonSearchBar';
+import { PokemonSearchBar } from '@/features/Pokedex/PokemonListScreen/components/PokemonSearchBar';
+import { ListPokemon } from '@/services/types';
+import { useGetPokemonListQuery } from '@/services/pokemonApi';
 
 export const PokemonListScreen = () => {
   const { data, isLoading, isFetching, error, refetch } = useGetPokemonListQuery();

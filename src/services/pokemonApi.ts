@@ -1,7 +1,7 @@
+import { GEN_1_POKEMON_COUNT } from '@/constants/api';
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import { ListPokemon, Pokemon, PokemonListResponse } from './types';
-import { GEN_1_POKEMON_COUNT } from '../constants/api';
-import { getPokemonId } from './utils';
+import { ListPokemon, PokemonListResponse, Pokemon } from '@/services/types';
+import { getPokemonId } from '@/services/utils';
 
 export const pokemonApi = createApi({
   reducerPath: 'pokemonApi',

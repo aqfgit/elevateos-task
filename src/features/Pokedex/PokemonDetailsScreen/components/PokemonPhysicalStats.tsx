@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { View, StyleSheet } from 'react-native';
-import { Pokemon } from '../../../../services/types';
-import { PokemonInfoRow } from './PokemonInfoRow';
+
+import { PokemonInfoRow } from '@/features/Pokedex/PokemonDetailsScreen/components/PokemonInfoRow';
+import { Pokemon } from '@/services/types';
 
 type Props = {
   pokemon: Pokemon;

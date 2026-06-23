@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
 import { NavigationProp, useNavigation } from '@react-navigation/native';
-import { getPokemonImage } from '../../utils/getPokemonImage';
-import { ParamList } from '../../../../navigation/types';
-import { ListPokemon } from '../../../../services/types';
 import { memo } from 'react';
+import { ParamList } from '@/navigation/types';
+import { ListPokemon } from '@/services/types';
+import { getPokemonImage } from '@/features/Pokedex/utils/getPokemonImage';
 
 type Props = { item: ListPokemon };
 

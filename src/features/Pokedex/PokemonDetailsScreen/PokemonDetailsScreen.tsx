@@ -2,11 +2,11 @@ import * as React from 'react';
 import { View, Text, StyleSheet, ActivityIndicator, ScrollView, Button } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
-import { useGetPokemonDetailsQuery } from '../../../services/pokemonApi';
-import { ParamList } from '../../../navigation/types';
-import { PokemonCombatStats } from './components/PokemonCombatStats';
-import { PokemonHeader } from './components/PokemonHeader';
-import { PokemonPhysicalStats } from './components/PokemonPhysicalStats';
+import { PokemonHeader } from '@/features/Pokedex/PokemonDetailsScreen/components/PokemonHeader';
+import { PokemonPhysicalStats } from '@/features/Pokedex/PokemonDetailsScreen/components/PokemonPhysicalStats';
+import { useGetPokemonDetailsQuery } from '@/services/pokemonApi';
+import { ParamList } from '@/navigation/types';
+import { PokemonCombatStats } from '@/features/Pokedex/PokemonDetailsScreen/components/PokemonCombatStats';
 
 type Props = NativeStackScreenProps<ParamList, 'PokemonDetailsScreen'>;
 
