@@ -24,11 +24,16 @@ export type Pokemon = {
   stats: PokemonStat[];
 };
 
-export type ListPokemon = {
+export type PokemonListResponseItem = {
   name: string;
   url: string;
 };
 
+export type ListPokemon = {
+  id: number | null;
+  name: string;
+};
+
 export type PokemonListResponse = {
-  results: ListPokemon[];
+  results: PokemonListResponseItem[];
 };

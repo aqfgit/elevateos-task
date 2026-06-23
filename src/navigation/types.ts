@@ -1,4 +1,4 @@
 export type ParamList = {
   PokemonListScreen: undefined;
-  PokemonDetailsScreen: { pokemonId: string };
+  PokemonDetailsScreen: { pokemonId: number };
 };
