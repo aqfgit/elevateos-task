@@ -18,7 +18,9 @@ export type Pokemon = {
   id: number;
   name: string;
   types: PokemonType[];
+  /** Height of the Pokémon in decimeters */
   height: number;
+  /** Weight of the Pokémon in hectograms */
   weight: number;
   base_experience: number;
   stats: PokemonStat[];

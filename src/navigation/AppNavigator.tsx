@@ -12,7 +12,11 @@ export const AppNavigator = () => {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="PokemonListScreen">
         <Stack.Screen name="PokemonListScreen" component={PokemonListScreen} options={{ headerShown: false }} />
-        <Stack.Screen name="PokemonDetailsScreen" component={PokemonDetailsScreen} />
+        <Stack.Screen
+          name="PokemonDetailsScreen"
+          component={PokemonDetailsScreen}
+          options={{ title: 'Pokémon details' }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
