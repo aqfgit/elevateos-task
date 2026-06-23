@@ -7,7 +7,13 @@
  * The `.filter(Boolean)` ensures we don't accidentally pop an empty string.
  */
 export const getPokemonId = (url: string): number | null => {
-  const id = url.split('/').filter(Boolean).pop();
+  const segment = url.split('/').filter(Boolean).pop();
 
-  return id ? Number(id) : null;
+  if (!segment) {
+    return null;
+  }
+
+  const parsedId = Number(segment);
+
+  return Number.isNaN(parsedId) ? null : parsedId;
 };
